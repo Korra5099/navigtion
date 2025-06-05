@@ -14,9 +14,17 @@ struct ContentView: View {
                 Text("This is the root view🌳")
                     .font(.title)
                     .foregroundColor(Color.green)
-                NavigationLink(destination: Text("You have arived to the second view👋")) {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-                }
+                NavigationLink(destination: SecondView()) {
+                    Text("Click here!")
+                        .font(.title2)
+                        .foregroundColor(Color.black)
+                
+                    NavigationLink(destination: Text("hello again")) {
+                        Text("click here!")
+                            .font(.title2)
+                            .foregroundColor(Color.black)
+                    }
+                    }
                 }
                 }
                 
